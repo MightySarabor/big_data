@@ -1,0 +1,58 @@
+Arbeiten auf dem Big-Data-Cluster
+=================================
+
+1. Allgemeines
+
+Für die Übungsaufgaben werden Sie zum Teil auf der Kommandozeile, zum Teil mit
+selbstgeschriebenem Code auf dem Big-Data-Cluster (infbdt06.fh-trier.de bis 
+infbdt11.fh-trier.de) arbeiten.
+
+
+2. Kommandozeile mit SSH
+
+Zur Kommandozeile gelangen Sie durch Anmelden mit einem SSH-Client, z. B. unter Windows
+mit "PuTTY" (https://www.putty.org/). Details dazu siehe anmeldung.txt.
+
+Auf der Linux-Kommandozeile können Sie z. B. die Werkzeuge von Hadoop und Spark sowie
+die Clients der verschiedenen NoSQL-Datenbanken (Redis, MongoDB, Cassandra) benutzen.
+Details dazu stehen in den jeweiligen Übungsblättern.
+
+
+3. Eigener Code in Java
+
+Für einige der Übungsaufgaben ist Code in Java zu schreiben. Dafür stelle ich 
+Codegerüste bereit, die Sie in eine Entwicklungsumgebung (IDE) wie Eclipse oder
+IntelliJ IDEA importieren können.
+
+Zum Bauen der Projekte wird in der Regel das Werkzeug "Maven" verwendet (die
+Entwicklungsumgebungen können das, wenn Sie die Projekte als Maven-Projekt
+importieren). Dieses beschafft die notwendigen Bibliotheken und baut das Projekt
+so zu einem Jar-File zusammen, dass Sie es auf dem Cluster laufen lassen können.
+
+Der Ablauf im Detail ist also etwa so:
+
+* Importieren des Beispielprojekts in Eclipse oder IntelliJ als *Maven-Projekt* (Wichtig! Sonst
+  können Sie das Projekt nicht korrekt bauen, weil Bibliotheken fehlen und kein funktionierendes
+  Paket erstellt wird).
+
+* Schreiben des eigenen Codes.
+
+* Lokal ausprobieren ist leider oft (bei Hadoop, Spark) nur unter Unix-artigen Betriebssystemen
+  möglich (Linux und evtl. MacOS (?)); Windows-Benutzer können zwar Hadoop- und Spark-
+  Projekte in der IDE übersetzen, aber nicht laufen lassen.
+
+* Bauen und Paketieren des Projekts mit Maven: mvn clean package oder entsprechendes Kommando 
+  in der IDE.
+
+* Kopieren des erzeugten Jobs auf den Cluster mittels scp (Secure Copy), z. B. 
+
+  <meinRechner>$ scp target/hdfsexample-0.0.1-SNAPSHOT-job.jar bigdata099@infbdt09.fh-trier.de:
+
+  Falls Sie keinen scp-Client haben, bietet PuTTY (https://putty.org) einen an.
+
+* Einloggen auf dem entsprechenden Rechner und Projekt dort starten, z. B. 
+
+  <meinRechner>$ ssh bigdata099@infbdt09.fh-trier.de
+  bigdata099@infbdt09.fh-trier.de:~> yarn jar hdfsexample-0.0.1-SNAPSHOT-job.jar
+
+

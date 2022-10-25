@@ -1,0 +1,41 @@
+﻿Name;Größe;Vorname;Nachname;Downloads;Datum;Pfad
+anmeldung.txt;2131;Christoph;Schmitz;94;"15.04.2021 15:13";"Allgemeiner Dateiordner/anmeldung.txt"
+arbeiten-auf-dem-cluster.txt;2356;Christoph;Schmitz;84;"15.04.2021 15:27";"Allgemeiner Dateiordner/arbeiten-auf-dem-cluster.txt"
+bdt-01-einfuehrung.pdf;2785981;Christoph;Schmitz;100;"12.04.2021 15:58";Folien/bdt-01-einfuehrung.pdf
+bdt-02-batch.pdf;563367;Christoph;Schmitz;59;"12.04.2021 15:58";Folien/bdt-02-batch.pdf
+bdt-03-hadoop-hdfs.pdf;616064;Christoph;Schmitz;90;"12.04.2021 15:58";Folien/bdt-03-hadoop-hdfs.pdf
+bdt-04-hadoop-mapreduce.pdf;1508355;Christoph;Schmitz;107;"12.04.2021 15:58";Folien/bdt-04-hadoop-mapreduce.pdf
+bdt-05-hadoop-yarn.pdf;543406;Christoph;Schmitz;55;"12.04.2021 15:58";Folien/bdt-05-hadoop-yarn.pdf
+bdt-06-batch-algorithmen.pdf;396323;Christoph;Schmitz;80;"12.04.2021 15:58";Folien/bdt-06-batch-algorithmen.pdf
+bdt-07-spark.pdf;786820;Christoph;Schmitz;75;"12.04.2021 15:58";Folien/bdt-07-spark.pdf
+bdt-08-nosql-intro.pdf;298168;Christoph;Schmitz;38;"12.04.2021 15:58";Folien/bdt-08-nosql-intro.pdf
+bdt-09-nosql-kv.pdf;417465;Christoph;Schmitz;66;"12.04.2021 15:58";Folien/bdt-09-nosql-kv.pdf
+bdt-10-cap-theorem.pdf;240523;Christoph;Schmitz;31;"12.04.2021 15:58";Folien/bdt-10-cap-theorem.pdf
+bdt-11-nosql-wide-col.pdf;511101;Christoph;Schmitz;89;"12.04.2021 15:58";Folien/bdt-11-nosql-wide-col.pdf
+bdt-12-nosql-columnar-db.pdf;175939;Christoph;Schmitz;37;"12.04.2021 15:58";Folien/bdt-12-nosql-columnar-db.pdf
+bdt-13-nosql-documentdb.pdf;817532;Christoph;Schmitz;73;"12.04.2021 15:58";Folien/bdt-13-nosql-documentdb.pdf
+bdt-14-messaging.pdf;327013;Christoph;Schmitz;58;"12.04.2021 15:58";Folien/bdt-14-messaging.pdf
+bdt-15-streams.pdf;418676;Christoph;Schmitz;52;"12.04.2021 15:58";Folien/bdt-15-streams.pdf
+bdt-16-architektur.pdf;1230249;Christoph;Schmitz;24;"12.04.2021 15:58";Folien/bdt-16-architektur.pdf
+bdt-17-zusammenfassung-ausblick.pdf;92670;Christoph;Schmitz;42;"12.04.2021 15:58";Folien/bdt-17-zusammenfassung-ausblick.pdf
+bdt-uebung-1-hdfsexample.zip;3799;Christoph;Schmitz;69;"15.04.2021 14:55";Übungsblätter/bdt-uebung-1-hdfsexample.zip
+bdt-uebung-1.pdf;42642;Christoph;Schmitz;149;"15.04.2021 14:57";Übungsblätter/bdt-uebung-1.pdf
+bdt-uebung-10.pdf;62610;Christoph;Schmitz;107;"15.04.2021 16:56";Übungsblätter/bdt-uebung-10.pdf
+bdt-uebung-2-mapredexample.zip;4803;Christoph;Schmitz;50;"29.04.2021 09:29";Übungsblätter/bdt-uebung-2-mapredexample.zip
+bdt-uebung-2.pdf;44098;Christoph;Schmitz;113;"15.04.2021 14:55";Übungsblätter/bdt-uebung-2.pdf
+bdt-uebung-3-invertedindex.zip;9474;Christoph;Schmitz;41;"29.04.2021 10:42";Übungsblätter/bdt-uebung-3-invertedindex.zip
+bdt-uebung-3.pdf;56387;Christoph;Schmitz;103;"15.04.2021 14:55";Übungsblätter/bdt-uebung-3.pdf
+bdt-uebung-4-aggregates.zip;4708;Christoph;Schmitz;23;"29.04.2021 10:42";Übungsblätter/bdt-uebung-4-aggregates.zip
+bdt-uebung-4-quantiles.zip;96893;Christoph;Schmitz;23;"29.04.2021 10:42";Übungsblätter/bdt-uebung-4-quantiles.zip
+bdt-uebung-4.pdf;94755;Christoph;Schmitz;85;"15.04.2021 14:55";Übungsblätter/bdt-uebung-4.pdf
+bdt-uebung-5-spark.zip;88375;Christoph;Schmitz;39;"30.04.2021 10:21";Übungsblätter/bdt-uebung-5-spark.zip
+bdt-uebung-5.pdf;49228;Christoph;Schmitz;105;"15.04.2021 14:55";Übungsblätter/bdt-uebung-5.pdf
+bdt-uebung-6-redisexample-testsfixed.zip;10335;Christoph;Schmitz;23;"01.06.2021 09:39";Übungsblätter/bdt-uebung-6-redisexample-testsfixed.zip
+bdt-uebung-6-redisexample.zip;9486;Christoph;Schmitz;29;"15.04.2021 15:41";Übungsblätter/bdt-uebung-6-redisexample.zip
+bdt-uebung-6.pdf;51963;Christoph;Schmitz;112;"15.04.2021 16:28";Übungsblätter/bdt-uebung-6.pdf
+bdt-uebung-7.pdf;54336;Christoph;Schmitz;89;"15.04.2021 14:55";Übungsblätter/bdt-uebung-7.pdf
+bdt-uebung-8-consistent-hashing.zip;3492;Christoph;Schmitz;35;"15.04.2021 14:55";Übungsblätter/bdt-uebung-8-consistent-hashing.zip
+bdt-uebung-8.pdf;45525;Christoph;Schmitz;95;"15.04.2021 14:55";Übungsblätter/bdt-uebung-8.pdf
+bdt-uebung-9.pdf;54588;Christoph;Schmitz;114;"15.04.2021 14:55";Übungsblätter/bdt-uebung-9.pdf
+codebeispiel-mapreduce-join.zip;11575;Christoph;Schmitz;9;"12.05.2021 13:42";Übungsblätter/codebeispiel-mapreduce-join.zip
+kafka.jaas;370;Christoph;Schmitz;23;"15.04.2021 14:55";Übungsblätter/kafka.jaas

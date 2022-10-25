@@ -1,0 +1,46 @@
+# Anmelden an einer der Maschinen infbdt06.fh-trier.de bis infbdt11.fh-trier.de.
+# bigdataXYZ durch Ihren persönlichen Account ersetzen!
+#
+# Sie müssen zur Anmeldung im VPN der Hochschule sein. Anleitung dazu unter
+# https://helpdesk.hochschule-trier.de/otrs/customer.pl?Action=CustomerFAQExplorer
+#
+# Sie können einen SSH-Client auf der Kommandozeile verwenden (wie unten gezeigt),
+# oder auch PuTTY. In dem Fall ist bigdataXYZ der Benutzername und infbdt06.fh-trier.de,
+# infbdt07.fh-trier.de ... infbdt11.fh-trier.de der Hostname.
+
+$ ssh bigdataXYZ@infbdt06.fh-trier.de
+bigdataXYZ@infbdt06.fh-trier.de's password: 
+Welcome to Ubuntu 16.04.4 LTS (GNU/Linux 4.4.0-116-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+Last login: Thu Mar 15 19:55:35 2018 from 143.93.53.56
+
+# Prüfen, ob Sie ein Kerberos-Ticket erhalten haben. Wichtig ist
+# die Zeile "Default principal: ...", die Ihren Account beinhalten muss.
+
+bigdataXYZ@infbdt06:~$ klist
+Ticket cache: FILE:/tmp/krb5cc_5100_cnCTDT
+Default principal: bigdataXYZ@BIGDATA.FH-TRIER.DE
+
+Valid starting       Expires              Service principal
+26.03.2018 10:25:09  26.03.2018 20:25:09  krbtgt/BIGDATA.FH-TRIER.DE@BIGDATA.FH-TRIER.DE
+	renew until 02.04.2018 10:25:09
+
+# Prüfen, ob Dateisystem-Operationen im HDFS funktionieren. Hier sollte keine 
+# Fehlermeldung, sondern der Inhalt des genannten Verzeichnisses erscheinen.
+#
+# Informationen zu den Filesystem-Kommandos:
+#
+# https://hadoop.apache.org/docs/r2.7.3/hadoop-project-dist/hadoop-common/FileSystemShell.html
+bigdataXYZ@infbdt11:~$ hdfs dfs -ls /data
+Found 6 items
+-rw-r--r--   3 schmi users      56466 2018-04-05 16:09 /data/caesar.txt
+drwxr-xr-x   - schmi users          0 2018-03-16 14:33 /data/gutenberg
+drwxr-xr-x   - schmi users          0 2018-04-20 13:20 /data/gutenberg-split
+drwxr-xr-x   - schmi users          0 2018-03-16 12:01 /data/irs-income-tax
+drwxr-xr-x   - schmi users          0 2018-04-20 11:43 /data/shakespeare
+drwxr-xr-x   - schmi users          0 2018-04-20 11:43 /data/userdata
+
